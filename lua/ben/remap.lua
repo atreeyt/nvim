@@ -1,6 +1,13 @@
 local utils = require('ben.utils')
 vim.g.mapleader = " "
 
+if vim.fn.has("mac") == 1 or vim.fn.has("macunix") == 1 then
+    vim.keymap.set("n", "<D-j>", "<M-j>")
+    vim.keymap.set("n", "<D-k>", "<M-k>")
+    vim.keymap.set("v", "<D-j>", "<M-j>")
+    vim.keymap.set("v", "<D-k>", "<M-k>")
+end
+
 -- Smart way to move between windows
 vim.keymap.set("n", "<C-j>", "<C-W>j")
 vim.keymap.set("n", "<C-k>", "<C-W>k")
@@ -12,10 +19,6 @@ vim.keymap.set("n", "<C-Up>", "<C-W>k")
 vim.keymap.set("n", "<C-Left>", "<C-W>h")
 vim.keymap.set("n", "<C-Right>", "<C-W>l")
 
-vim.keymap.set('n', '<C-Down>', '<C-W>j')
-vim.keymap.set('n', '<C-Up>', '<C-W>k')
-vim.keymap.set('n', '<C-Left>', '<C-W>h')
-vim.keymap.set('n', '<C-Right>', '<C-W>l')
 
 -- Close the current buffer
 vim.keymap.set("n", "<leader>bd", ":Bclose<CR>:tabclose<CR>gT")
