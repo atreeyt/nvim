@@ -17,3 +17,4 @@ vim.opt.scrolloff = 8
 vim.opt.shortmess:remove("S")
 vim.opt.background=dark
 vim.o.foldcolumn = "1"
+vim.g.lazyvim_check_order = false
