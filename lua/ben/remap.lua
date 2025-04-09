@@ -1,4 +1,3 @@
-local utils = require('ben.utils')
 vim.g.mapleader = " "
 
 if vim.fn.has("mac") == 1 or vim.fn.has("macunix") == 1 then
