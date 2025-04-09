@@ -15,6 +15,6 @@ vim.opt.incsearch = true -- i think multiple search results?
 vim.opt.scrolloff = 8
 --Adds a counter for the number of search matches in the bottom right.
 vim.opt.shortmess:remove("S")
-vim.opt.background=dark
+vim.opt.background = dark
 vim.o.foldcolumn = "1"
 vim.g.lazyvim_check_order = false

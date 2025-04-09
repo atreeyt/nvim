@@ -8,8 +8,8 @@ return {
 		vim.g.NERDTreeWinSize = 35
 
 		-- Key Mappings
-		vim.api.nvim_set_keymap('n', '<leader>nn', ':NERDTreeToggle<CR>', { noremap = true })
-		vim.api.nvim_set_keymap('n', '<leader>nb', ':NERDTreeFromBookmark<Space>', { noremap = true })
-		vim.api.nvim_set_keymap('n', '<leader>nf', ':NERDTreeFind<CR>', { noremap = true })
-	end
+		vim.api.nvim_set_keymap("n", "<leader>nn", ":NERDTreeToggle<CR>", { noremap = true })
+		vim.api.nvim_set_keymap("n", "<leader>nb", ":NERDTreeFromBookmark<Space>", { noremap = true })
+		vim.api.nvim_set_keymap("n", "<leader>nf", ":NERDTreeFind<CR>", { noremap = true })
+	end,
 }
