@@ -2,7 +2,7 @@ return {
 	"preservim/nerdtree",
 	config = function()
 		-- Global Variables
-		vim.g.NERDTreeWinPos = "right"
+		vim.g.NERDTreeWinPos = "left"
 		vim.g.NERDTreeShowHidden = 1
 		vim.g.NERDTreeIgnore = { "%.pyc$", "__pycache__" }
 		vim.g.NERDTreeWinSize = 35
